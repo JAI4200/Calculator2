@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 int main() {
     int choice;
@@ -57,8 +58,10 @@ int main() {
                 break;
             case 6:
                 printf("Exiting...\n");
+                exit(1);
             default:
                 printf("Error: Invalid choice. Please enter a number between 1 and 6.\n");
+                abort();
         }
     }
 
